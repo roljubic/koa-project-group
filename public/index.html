@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Koa Project Group | Owner's Representative & Renovation Management Oahu, Hawaii</title>
+  <meta name="description" content="Koa Project Group is Oahu's trusted owner's representative for luxury renovations and construction. We protect your budget, timeline, and investment — managing contractors from start to finish so you don't have to." />
+  <meta name="keywords" content="owner's representative hawaii, oahu construction project management, renovation management oahu, hawaii contractor oversight, oahu home renovation management, absentee owner renovation hawaii, luxury renovation oahu, oahu owner rep" />
+  <link rel="canonical" href="https://koaprojectgroup.com/" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Koa Project Group","description":"Owner's representative and renovation project management for luxury properties on Oahu, Hawaii.","url":"https://koaprojectgroup.com","telephone":"+1-808-000-0000","address":{"@type":"PostalAddress","addressLocality":"Honolulu","addressRegion":"HI","addressCountry":"US"},"areaServed":{"@type":"Place","name":"Oahu, Hawaii"},"priceRange":"$$$$"}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Satoshi:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--bg:#0f0e0c;--bg2:#161410;--stone:#2a2620;--gold:#c8a96e;--gold2:#e2c48a;--cream:#f2ede4;--muted:#7a7268;--white:#fff;--border:rgba(200,169,110,0.18);--ease:cubic-bezier(.16,1,.3,1)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Satoshi',system-ui,sans-serif;background:var(--bg);color:var(--cream);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    a{text-decoration:none;color:inherit}
+    ::selection{background:var(--gold);color:#000}
+    .wrap{max-width:1260px;margin:0 auto;padding:0 40px}
+    .reveal{opacity:0;transform:translateY(36px);transition:opacity .85s var(--ease),transform .85s var(--ease)}
+    .reveal.on{opacity:1;transform:none}
+    .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:999;padding:26px 0;transition:all .35s}
+    nav.s{padding:14px 0;background:rgba(15,14,12,.94);backdrop-filter:blur(18px);border-bottom:1px solid var(--border)}
+    .ni{display:flex;align-items:center;justify-content:space-between}
+    .logo{font-family:'Cormorant',serif;font-size:1.4rem;font-weight:400;letter-spacing:.05em;color:var(--white)}
+    .logo span{color:var(--gold);font-style:italic}
+    .nl{display:flex;gap:36px;list-style:none}
+    .nl a{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.55);transition:color .2s}
+    .nl a:hover{color:var(--gold)}
+    .ncta{border:1px solid var(--gold)!important;color:var(--gold)!important;padding:10px 22px;transition:all .2s!important}
+    .ncta:hover{background:var(--gold)!important;color:#000!important}
+    .burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+    .burger span{width:24px;height:1px;background:var(--white);transition:.3s}
+
+    /* HERO */
+    .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:var(--bg)}
+    .hbg{position:absolute;inset:0;background:radial-gradient(ellipse 90% 70% at 65% 50%,#1e1a14 0%,#0f0e0c 70%)}
+    .hgrid{position:absolute;inset:0;background-image:linear-gradient(rgba(200,169,110,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(200,169,110,.035) 1px,transparent 1px);background-size:90px 90px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black,transparent)}
+    .horb{position:absolute;border-radius:50%;filter:blur(120px);animation:of 10s ease-in-out infinite}
+    .horb1{width:700px;height:700px;background:rgba(200,169,110,.06);top:-200px;right:-150px}
+    .horb2{width:400px;height:400px;background:rgba(100,80,40,.15);bottom:-100px;left:5%;animation-delay:-5s}
+    @keyframes of{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-25px) scale(1.04)}}
+    .hc{position:relative;z-index:2;padding:140px 0 100px;max-width:780px}
+    .eyebrow{display:inline-flex;align-items:center;gap:14px;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:32px;font-weight:500}
+    .eyebrow::before,.eyebrow::after{content:'';display:block;width:36px;height:1px;background:var(--gold)}
+    h1{font-family:'Cormorant',serif;font-size:clamp(3.2rem,6.5vw,6.5rem);font-weight:300;line-height:.95;letter-spacing:-.02em;color:var(--white);margin-bottom:32px}
+    h1 em{font-style:italic;color:var(--gold)}
+    h1 .out{-webkit-text-stroke:1px rgba(255,255,255,.3);color:transparent}
+    .hsub{font-size:1.05rem;font-weight:300;color:rgba(255,255,255,.52);max-width:500px;line-height:1.9;margin-bottom:48px}
+    .hbtns{display:flex;gap:16px;flex-wrap:wrap}
+    .btn-g{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#0f0e0c;padding:17px 38px;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:all .25s;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px))}
+    .btn-g:hover{background:var(--gold2);transform:translateY(-2px)}
+    .btn-gh{display:inline-flex;align-items:center;gap:10px;color:rgba(255,255,255,.65);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;padding:17px 0;border-bottom:1px solid rgba(255,255,255,.2);transition:all .2s}
+    .btn-gh:hover{color:var(--gold);border-color:var(--gold)}
+    .hstats{display:flex;gap:2px;margin-top:72px}
+    .hst{background:rgba(255,255,255,.03);border:1px solid var(--border);padding:22px 28px;flex:1;backdrop-filter:blur(8px);transition:background .25s}
+    .hst:hover{background:rgba(200,169,110,.07)}
+    .hsn{font-family:'Cormorant',serif;font-size:2.2rem;font-weight:300;color:var(--gold);display:block;line-height:1}
+    .hsl{font-size:.67rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-top:6px}
+    .scroll-ind{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,.25);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;animation:sb 2s ease-in-out infinite}
+    .scroll-ind::after{content:'';display:block;width:1px;height:50px;background:linear-gradient(to bottom,rgba(255,255,255,.25),transparent)}
+    @keyframes sb{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+
+    /* MARQUEE */
+    .mq{background:var(--gold);padding:15px 0;overflow:hidden;white-space:nowrap}
+    .mq-t{display:inline-flex;animation:mq 28s linear infinite}
+    .mq-t span{display:inline-flex;align-items:center;gap:28px;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:#0f0e0c;font-weight:700;padding:0 28px}
+    .mq-t span::after{content:'◆';font-size:.45rem}
+    @keyframes mq{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+    /* SECTIONS */
+    section{padding:110px 0}
+    .sl{display:inline-flex;align-items:center;gap:12px;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:22px;font-weight:500}
+    .sl::before{content:'';width:30px;height:1px;background:var(--gold)}
+    .st{font-family:'Cormorant',serif;font-size:clamp(2rem,3.8vw,3.6rem);font-weight:300;line-height:1.1}
+    .sb{font-size:.97rem;color:rgba(255,255,255,.47);line-height:1.88;font-weight:300}
+
+    /* PROBLEM */
+    .prob{background:var(--bg2)}
+    .pg{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center;margin-top:72px}
+    .pi{list-style:none;display:flex;flex-direction:column}
+    .pitem{display:grid;grid-template-columns:52px 1fr;gap:20px;padding:26px 0;border-bottom:1px solid rgba(255,255,255,.05);transition:border-color .3s}
+    .pitem:first-child{border-top:1px solid rgba(255,255,255,.05)}
+    .pitem:hover{border-color:rgba(200,169,110,.25)}
+    .pn{font-family:'Cormorant',serif;font-size:2.2rem;font-weight:300;color:rgba(200,169,110,.15);line-height:1}
+    .pt h4{font-family:'Cormorant',serif;font-size:1.1rem;color:var(--cream);margin-bottom:6px}
+    .pt p{font-size:.86rem;color:rgba(255,255,255,.38);line-height:1.72}
+    .pc{background:linear-gradient(145deg,rgba(200,169,110,.09) 0%,rgba(200,169,110,.02) 100%);border:1px solid var(--border);padding:52px 44px;position:relative;overflow:hidden}
+    .pc::before{content:'"';font-family:'Cormorant',serif;font-size:18rem;color:rgba(200,169,110,.04);position:absolute;top:-60px;left:-10px;line-height:1;pointer-events:none}
+    .pc blockquote{font-family:'Cormorant',serif;font-size:1.65rem;font-weight:300;font-style:italic;color:var(--cream);line-height:1.55;margin-bottom:28px;position:relative}
+    .pc blockquote span{color:var(--gold)}
+    .pc p{font-size:.9rem;color:rgba(255,255,255,.47);line-height:1.82;margin-bottom:32px}
+
+    /* SERVICES */
+    .svcs{background:var(--bg)}
+    .sg{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.05);margin-top:72px}
+    .sc{background:var(--bg);padding:48px 40px;position:relative;overflow:hidden;transition:background .3s}
+    .sc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+    .sc:hover::after{transform:scaleX(1)}
+    .sc:hover{background:rgba(200,169,110,.04)}
+    .sc.feat{background:linear-gradient(150deg,#1e1a12,#12100c);border:1px solid var(--border)}
+    .sc.feat::after{transform:scaleX(1)}
+    .sbadge{display:inline-block;font-size:.63rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);border:1px solid var(--border);padding:4px 12px;margin-bottom:26px}
+    .sname{font-family:'Cormorant',serif;font-size:1.8rem;font-weight:300;color:var(--white);margin-bottom:6px}
+    .sprice{font-family:'Cormorant',serif;font-size:2.8rem;font-weight:300;color:var(--gold);line-height:1;margin-bottom:4px}
+    .sunit{font-size:.78rem;color:rgba(255,255,255,.3);letter-spacing:.08em;margin-bottom:32px}
+    .sdiv{width:36px;height:1px;background:var(--border);margin-bottom:26px}
+    .sfl{list-style:none;display:flex;flex-direction:column;gap:13px}
+    .sfl li{display:flex;gap:12px;align-items:flex-start;font-size:.87rem;color:rgba(255,255,255,.57);line-height:1.5}
+    .ck{color:var(--gold);flex-shrink:0;margin-top:1px}
+    .scta{display:inline-flex;align-items:center;gap:8px;margin-top:36px;font-size:.73rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);transition:gap .2s}
+    .scta:hover{gap:16px}
+    .scta::after{content:'→'}
+
+    /* PROCESS */
+    .proc{background:var(--bg2)}
+    .psteps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:72px;border:1px solid rgba(255,255,255,.05)}
+    .pstep{padding:44px 30px;border-right:1px solid rgba(255,255,255,.05);position:relative;transition:background .3s}
+    .pstep:last-child{border-right:none}
+    .pstep:hover{background:rgba(200,169,110,.03)}
+    .pstep::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),transparent);opacity:0;transition:opacity .3s}
+    .pstep:hover::before{opacity:1}
+    .pnum{font-family:'Cormorant',serif;font-size:3.5rem;font-weight:300;color:rgba(200,169,110,.13);line-height:1;margin-bottom:24px;display:block}
+    .pstep h4{font-family:'Cormorant',serif;font-size:1.2rem;color:var(--cream);margin-bottom:10px}
+    .pstep p{font-size:.83rem;color:rgba(255,255,255,.38);line-height:1.72}
+
+    /* WHY */
+    .why{background:var(--bg)}
+    .wg{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center}
+    .wvis{aspect-ratio:3/4;background:linear-gradient(150deg,#1e1a12,#0f0e0c);border:1px solid var(--border);position:relative;overflow:hidden}
+    .wvis-inner{position:absolute;inset:20px;border:1px solid rgba(200,169,110,.08);display:flex;align-items:center;justify-content:center}
+    .wvis-text{font-family:'Cormorant',serif;font-size:1.25rem;font-style:italic;color:rgba(200,169,110,.45);text-align:center;padding:36px;line-height:1.7}
+    .wbadge{position:absolute;bottom:28px;left:28px;right:28px;background:rgba(15,14,12,.92);border:1px solid var(--border);padding:18px 22px;backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center}
+    .wbl{font-size:.72rem;color:rgba(255,255,255,.35);letter-spacing:.08em}
+    .wbv{font-family:'Cormorant',serif;font-size:1.7rem;color:var(--gold)}
+    .wi{list-style:none;display:flex;flex-direction:column}
+    .witem{display:grid;grid-template-columns:44px 1fr;gap:18px;padding:28px 0;border-bottom:1px solid rgba(255,255,255,.05);transition:border-color .3s}
+    .witem:hover{border-color:rgba(200,169,110,.25)}
+    .wicon{font-size:1.3rem;margin-top:2px}
+    .witem h4{font-family:'Cormorant',serif;font-size:1.12rem;color:var(--cream);margin-bottom:7px}
+    .witem p{font-size:.85rem;color:rgba(255,255,255,.38);line-height:1.72}
+
+    /* AREAS */
+    .areas{background:var(--bg2)}
+    .ag{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.04);margin-top:72px}
+    .ac{background:var(--bg2);padding:32px 24px;border-bottom:2px solid transparent;transition:all .3s;position:relative;overflow:hidden}
+    .ac:hover{background:rgba(200,169,110,.04);border-color:var(--gold)}
+    .acn{font-family:'Cormorant',serif;font-size:2.5rem;font-weight:300;color:rgba(200,169,110,.08);position:absolute;top:10px;right:16px}
+    .ac h4{font-family:'Cormorant',serif;font-size:1.15rem;color:var(--cream);margin-bottom:6px}
+    .ac p{font-size:.78rem;color:rgba(255,255,255,.33)}
+    .acl{width:0;height:1px;background:var(--gold);margin-top:18px;transition:width .4s var(--ease)}
+    .ac:hover .acl{width:36px}
+
+    /* TESTIMONIALS */
+    .testi{background:var(--bg)}
+    .tg{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.04);margin-top:72px}
+    .tc{background:var(--bg);padding:44px 36px;transition:background .3s}
+    .tc:hover{background:rgba(200,169,110,.04)}
+    .tstars{display:flex;gap:3px;margin-bottom:22px}
+    .tstars span{width:13px;height:13px;background:var(--gold);display:block;clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+    .tq{font-family:'Cormorant',serif;font-size:1.15rem;font-style:italic;color:var(--cream);line-height:1.72;margin-bottom:28px}
+    .tdiv{width:28px;height:1px;background:var(--border);margin-bottom:18px}
+    .ta{font-size:.8rem;color:rgba(255,255,255,.38)}
+    .ta strong{display:block;color:var(--cream);font-size:.86rem;margin-bottom:2px;font-weight:500}
+
+    /* BLOG */
+    .blog{background:var(--bg2)}
+    .bg{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:1px;background:rgba(255,255,255,.04);margin-top:72px}
+    .bc{background:var(--bg2);overflow:hidden}
+    .bimg{background:linear-gradient(135deg,#1e1a12,#0f0e0c);display:flex;align-items:center;justify-content:center;font-size:2.8rem;position:relative;overflow:hidden;transition:transform .5s var(--ease)}
+    .bimg{height:220px}
+    .bc:first-child .bimg{height:300px}
+    .bc:hover .bimg{transform:scale(1.04)}
+    .bover{position:absolute;inset:0;background:linear-gradient(to top,rgba(15,14,12,.55),transparent)}
+    .bbd{padding:28px 24px}
+    .bcat{font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;font-weight:500}
+    .btitle{font-family:'Cormorant',serif;font-size:1.15rem;color:var(--cream);line-height:1.4;margin-bottom:10px;transition:color .2s}
+    .bc:first-child .btitle{font-size:1.4rem}
+    .bc:hover .btitle{color:var(--gold)}
+    .bexc{font-size:.84rem;color:rgba(255,255,255,.38);line-height:1.7}
+    .bmeta{font-size:.7rem;color:rgba(255,255,255,.22);margin-top:14px}
+
+    /* CTA BAND */
+    .cband{background:var(--gold);padding:0}
+    .cbi{display:grid;grid-template-columns:1fr auto;align-items:center;gap:60px;padding:68px 0}
+    .cbt h2{font-family:'Cormorant',serif;font-size:clamp(1.8rem,3.5vw,3rem);font-weight:300;color:#0f0e0c;line-height:1.15}
+    .cbt p{font-size:.93rem;color:rgba(15,14,12,.6);margin-top:10px}
+    .btn-d{display:inline-flex;align-items:center;gap:12px;background:#0f0e0c;color:var(--gold);padding:18px 40px;white-space:nowrap;font-size:.77rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;transition:background .25s;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px))}
+    .btn-d:hover{background:#1e1a12}
+
+    /* CONTACT */
+    .contact{background:var(--bg)}
+    .cg{display:grid;grid-template-columns:1fr 1.4fr;gap:90px;align-items:start}
+    .ci h3{font-family:'Cormorant',serif;font-size:2.4rem;font-weight:300;color:var(--cream);margin-bottom:18px;line-height:1.15}
+    .ci p{font-size:.9rem;color:rgba(255,255,255,.42);line-height:1.85;margin-bottom:40px}
+    .cd{display:flex;gap:14px;align-items:flex-start;margin-bottom:22px}
+    .cdi{color:var(--gold);font-size:1rem;margin-top:2px}
+    .cdl{font-size:.66rem;color:rgba(255,255,255,.28);letter-spacing:.12em;text-transform:uppercase;margin-bottom:3px}
+    .cdv{font-size:.9rem;color:var(--cream)}
+    .cf{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.05);padding:48px 44px}
+    .frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .fg{display:flex;flex-direction:column;gap:7px}
+    .fg label{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3)}
+    .fg input,.fg select,.fg textarea{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);color:var(--cream);padding:13px 16px;font-family:'Satoshi',sans-serif;font-size:.9rem;outline:none;transition:border-color .2s;-webkit-appearance:none}
+    .fg input::placeholder,.fg textarea::placeholder{color:rgba(255,255,255,.18)}
+    .fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--gold)}
+    .fg select option{background:#0f0e0c}
+    .fg textarea{min-height:110px;resize:vertical}
+    .fsub{margin-top:24px;width:100%;background:var(--gold);color:#0f0e0c;border:none;padding:17px;font-family:'Satoshi',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;transition:background .25s;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))}
+    .fsub:hover{background:var(--gold2)}
+    .ffields{display:flex;flex-direction:column;gap:14px}
+
+    /* FOOTER */
+    footer{background:#080705;border-top:1px solid rgba(255,255,255,.04);padding:60px 0 28px}
+    .fg2{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:60px;margin-bottom:56px}
+    .fb p{font-size:.84rem;color:rgba(255,255,255,.28);line-height:1.75;margin-top:14px;max-width:250px}
+    .fc h5{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;font-family:'Satoshi',sans-serif;font-weight:500}
+    .fc ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+    .fc a{font-size:.83rem;color:rgba(255,255,255,.28);transition:color .2s}
+    .fc a:hover{color:var(--gold)}
+    .fbot{border-top:1px solid rgba(255,255,255,.04);padding-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+    .fbot p,.fbot a{font-size:.74rem;color:rgba(255,255,255,.18)}
+    .fbot a:hover{color:var(--gold)}
+
+    @media(max-width:1024px){.wrap{padding:0 24px}.pg,.wg,.cg{grid-template-columns:1fr;gap:56px}.sg,.tg,.bg{grid-template-columns:1fr}.psteps{grid-template-columns:1fr 1fr}.ag{grid-template-columns:1fr 1fr}.fg2{grid-template-columns:1fr 1fr;gap:36px}.nl{display:none}.burger{display:flex}.cbi{grid-template-columns:1fr;gap:28px}.hstats{flex-wrap:wrap}}
+    @media(max-width:640px){.wrap{padding:0 18px}section{padding:80px 0}h1{font-size:2.8rem}.hbtns{flex-direction:column}.frow{grid-template-columns:1fr}.psteps,.ag{grid-template-columns:1fr}.fg2{grid-template-columns:1fr}.cf{padding:32px 24px}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <div class="wrap"><div class="ni">
+    <a href="/" class="logo">Koa <span>Project Group</span></a>
+    <ul class="nl">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#why">Why Koa</a></li>
+      <li><a href="#contact" class="ncta">Get a Project Review</a></li>
+    </ul>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div></div>
+</nav>
+
+<section class="hero">
+  <div class="hbg"></div><div class="hgrid"></div>
+  <div class="horb horb1"></div><div class="horb horb2"></div>
+  <div class="wrap"><div class="hc">
+    <div class="eyebrow reveal">Owner's Representative · Renovation Management · Oahu, Hawaii</div>
+    <h1 class="reveal d1">Your Renovation.<br /><em>Protected.</em><br /><span class="out">Delivered.</span></h1>
+    <p class="hsub reveal d2">Koa means brave and strong in Hawaiian. Off-island owners shouldn't have to gamble on Hawaii contractors. We put an expert on your side — protecting your budget, timeline, and investment from day one.</p>
+    <div class="hbtns reveal d3">
+      <a href="#contact" class="btn-g">Get a Free Project Review</a>
+      <a href="#services" class="btn-gh">Our Services</a>
+    </div>
+    <div class="hstats reveal d4">
+      <div class="hst"><span class="hsn">8–12%</span><div class="hsl">Project Management Fee</div></div>
+      <div class="hst"><span class="hsn">$250</span><div class="hsl">Hourly Advisory Rate</div></div>
+      <div class="hst"><span class="hsn">100%</span><div class="hsl">Vetted Contractor Network</div></div>
+      <div class="hst"><span class="hsn">Weekly</span><div class="hsl">Site Reports to Owner</div></div>
+    </div>
+  </div></div>
+  <div class="scroll-ind">Scroll</div>
+</section>
+
+<div class="mq"><div class="mq-t">
+  <span>Budget Protection</span><span>Timeline Management</span><span>Contractor Vetting</span><span>Weekly Site Reports</span><span>Change Order Control</span><span>Quality Inspections</span><span>Bid Management</span><span>Owner Advocacy</span>
+  <span>Budget Protection</span><span>Timeline Management</span><span>Contractor Vetting</span><span>Weekly Site Reports</span><span>Change Order Control</span><span>Quality Inspections</span><span>Bid Management</span><span>Owner Advocacy</span>
+</div></div>
+
+<section class="prob">
+  <div class="wrap">
+    <div class="sl reveal">The Problem</div>
+    <h2 class="st reveal d1">Why Hawaii Renovations<br />Go Wrong for Off-Island Owners</h2>
+    <div class="pg">
+      <ul class="pi">
+        <li class="pitem reveal"><div class="pn">01</div><div class="pt"><h4>No One On-Site to Hold Contractors Accountable</h4><p>Without a trusted eye on the ground, contractors take shortcuts, miss milestones, and bill for work not done. You won't know until your next visit.</p></div></li>
+        <li class="pitem reveal d1"><div class="pn">02</div><div class="pt"><h4>Change Orders That Spiral Out of Control</h4><p>Hawaii renovations routinely end up 30–60% over budget due to unchecked change orders. An owner's rep reviews every single one before it's approved.</p></div></li>
+        <li class="pitem reveal d2"><div class="pn">03</div><div class="pt"><h4>Timelines That Stretch for Months</h4><p>Without regular milestone enforcement, Hawaii projects drag. What was supposed to be 4 months becomes 9 — and you're paying carrying costs the entire time.</p></div></li>
+        <li class="pitem reveal d3"><div class="pn">04</div><div class="pt"><h4>Quality Issues Found Too Late</h4><p>Poor waterproofing, bad tile work, substandard finishes — discovered after final payment, when it's too expensive to fix properly.</p></div></li>
+      </ul>
+      <div class="pc reveal d1">
+        <blockquote>"We saved a client <span>$120,000</span> in unjustified change orders on a single Kahala renovation. That's what an advocate on the ground is worth."</blockquote>
+        <p>Koa Project Group acts as your eyes, voice, and shield throughout every renovation. We know Hawaii's trades, permit processes, and market rates — and we use that knowledge to protect you at every stage.</p>
+        <a href="#contact" class="btn-g">Protect Your Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="svcs" id="services">
+  <div class="wrap">
+    <div class="sl reveal">What We Do</div>
+    <h2 class="st reveal d1">Full-Spectrum Owner<br /><em style="font-style:italic;color:var(--gold)">Representation</em></h2>
+    <div class="sg">
+      <div class="sc reveal">
+        <div class="sbadge">Core Service</div>
+        <div class="sname">Project Management</div>
+        <div class="sprice">8–12%</div>
+        <div class="sunit">of total project budget · Minimum $10,000</div>
+        <div class="sdiv"></div>
+        <ul class="sfl">
+          <li><span class="ck">✦</span>Contractor vetting, bidding, and selection management</li>
+          <li><span class="ck">✦</span>Contract review and negotiation support</li>
+          <li><span class="ck">✦</span>Timeline creation and milestone tracking</li>
+          <li><span class="ck">✦</span>Weekly site visits with photo/video owner reports</li>
+          <li><span class="ck">✦</span>Quality control inspections at every milestone</li>
+          <li><span class="ck">✦</span>Change order review and approval management</li>
+          <li><span class="ck">✦</span>Budget tracking and variance reporting</li>
+          <li><span class="ck">✦</span>Final punch list and owner walkthrough</li>
+        </ul>
+        <a href="#contact" class="scta">Get Started</a>
+      </div>
+      <div class="sc feat reveal d1">
+        <div class="sbadge">Recurring Revenue</div>
+        <div class="sname">Maintenance Retainer</div>
+        <div class="sprice">$2,500</div>
+        <div class="sunit">per month · Ongoing property oversight</div>
+        <div class="sdiv"></div>
+        <ul class="sfl">
+          <li><span class="ck">✦</span>Annual preventive maintenance schedule</li>
+          <li><span class="ck">✦</span>Vendor management (AC, roof, plumbing, pest)</li>
+          <li><span class="ck">✦</span>Emergency repair coordination</li>
+          <li><span class="ck">✦</span>Multi-year capital planning and budgeting</li>
+          <li><span class="ck">✦</span>Seasonal property condition assessments</li>
+          <li><span class="ck">✦</span>Monthly written property report</li>
+        </ul>
+        <a href="#contact" class="scta">Get Started</a>
+      </div>
+      <div class="sc reveal d2">
+        <div class="sbadge">On-Demand Advisory</div>
+        <div class="sname">Hourly Consulting</div>
+        <div class="sprice">$250</div>
+        <div class="sunit">per hour · No minimums</div>
+        <div class="sdiv"></div>
+        <ul class="sfl">
+          <li><span class="ck">✦</span>Contractor bid analysis and negotiation advice</li>
+          <li><span class="ck">✦</span>Contract review and red-flag identification</li>
+          <li><span class="ck">✦</span>Single site visit with written report</li>
+          <li><span class="ck">✦</span>Annual Property Health Check — flat $2,500</li>
+          <li><span class="ck">✦</span>Dispute mediation between owner and contractor</li>
+        </ul>
+        <a href="#contact" class="scta">Book a Consultation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="proc" id="process">
+  <div class="wrap">
+    <div class="sl reveal">How It Works</div>
+    <h2 class="st reveal d1">From First Bid to<br /><em style="font-style:italic;color:var(--gold)">Final Walkthrough</em></h2>
+    <div class="psteps">
+      <div class="pstep reveal"><span class="pnum">01</span><h4>Free Project Review</h4><p>We assess your project scope, budget, and contractor situation. No obligation — just clarity on what you're working with.</p></div>
+      <div class="pstep reveal d1"><span class="pnum">02</span><h4>Contractor Vetting</h4><p>We vet, bid, and shortlist licensed, insured Hawaii contractors. You see the options with our recommendation — you make the final call.</p></div>
+      <div class="pstep reveal d2"><span class="pnum">03</span><h4>Contract & Kickoff</h4><p>We review the contract for your protection, document the scope clearly, and establish a milestone schedule before a single nail is driven.</p></div>
+      <div class="pstep reveal d3"><span class="pnum">04</span><h4>Active Oversight</h4><p>Weekly site visits. Photo reports. Change order review. We're on-site so you don't have to be — keeping quality and budget in check.</p></div>
+      <div class="pstep reveal d4"><span class="pnum">05</span><h4>Completion & Handoff</h4><p>Final punch list inspection, contractor sign-off, and a complete project closeout package — documentation, warranties, contacts — delivered to you.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="wg">
+      <div class="wvis reveal">
+        <div class="wvis-inner"><div class="wvis-text">"Your project. Your investment. Your advocate on the ground — every single week."</div></div>
+        <div class="wbadge">
+          <div><div class="wbl">Average budget saved</div><div class="wbv">18%</div></div>
+          <div><div class="wbl">On-time completion</div><div class="wbv">94%</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="sl reveal">Why Koa</div>
+        <h2 class="st reveal d1" style="margin-bottom:44px">We Know Hawaii.<br /><em style="font-style:italic;color:var(--gold)">We Protect Owners.</em></h2>
+        <ul class="wi">
+          <li class="witem reveal"><div class="wicon">🔍</div><div><h4>We Know Hawaii's Trades</h4><p>We know which contractors are reliable, which ones to avoid, and the going rates for every trade on Oahu. That knowledge protects you from day one.</p></div></li>
+          <li class="witem reveal d1"><div class="wicon">🛡️</div><div><h4>Fully Insured — We Carry E&O</h4><p>Errors & Omissions plus General Liability insurance. You're covered if anything goes wrong on our watch — and we take that responsibility seriously.</p></div></li>
+          <li class="witem reveal d2"><div class="wicon">📊</div><div><h4>Complete Transparency</h4><p>Every expense, every change order, every vendor invoice — documented, reviewed, and reported. No surprises. Ever.</p></div></li>
+          <li class="witem reveal d3"><div class="wicon">⚖️</div><div><h4>We Are Not Contractors</h4><p>We never swing a hammer or pull a permit. We coordinate, supervise, and advocate. That independence is what makes us effective on your behalf.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="areas" id="areas">
+  <div class="wrap">
+    <div class="sl reveal">Where We Work</div>
+    <h2 class="st reveal d1">Serving Oahu's Finest<br /><em style="font-style:italic;color:var(--gold)">Residential Markets</em></h2>
+    <div class="ag">
+      <div class="ac reveal"><div class="acn">01</div><h4>Kahala</h4><p>Oahu's most prestigious estate market</p><div class="acl"></div></div>
+      <div class="ac reveal d1"><div class="acn">02</div><h4>Diamond Head</h4><p>Iconic hillside and oceanfront estates</p><div class="acl"></div></div>
+      <div class="ac reveal d2"><div class="acn">03</div><h4>Kailua / Lanikai</h4><p>Windward luxury homes and beachfront</p><div class="acl"></div></div>
+      <div class="ac reveal d3"><div class="acn">04</div><h4>Ko Olina</h4><p>Resort residential renovation projects</p><div class="acl"></div></div>
+      <div class="ac reveal"><div class="acn">05</div><h4>Portlock / Hawaii Kai</h4><p>Waterfront and marina-view estates</p><div class="acl"></div></div>
+      <div class="ac reveal d1"><div class="acn">06</div><h4>Nuuanu</h4><p>Historic hillside estate renovations</p><div class="acl"></div></div>
+      <div class="ac reveal d2"><div class="acn">07</div><h4>Manoa</h4><p>Premium residential neighborhood</p><div class="acl"></div></div>
+      <div class="ac reveal d3"><div class="acn">08</div><h4>All of Oahu</h4><p>We go where your project is</p><div class="acl"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="testi">
+  <div class="wrap">
+    <div class="sl reveal">Client Results</div>
+    <h2 class="st reveal d1">Owners Who Trusted Us<br /><em style="font-style:italic;color:var(--gold)">With Their Renovations</em></h2>
+    <div class="tg">
+      <div class="tc reveal"><div class="tstars"><span></span><span></span><span></span><span></span><span></span></div><p class="tq">"We had a contractor quote us $680,000 for a kitchen and master bath renovation. Koa's team reviewed the bid, negotiated line by line, and we completed the project for $510,000. Same scope. Better result."</p><div class="tdiv"></div><div class="ta"><strong>Catherine &amp; Robert M.</strong>Kahala Estate · Los Angeles, CA</div></div>
+      <div class="tc reveal d1"><div class="tstars"><span></span><span></span><span></span><span></span><span></span></div><p class="tq">"Managing a Hawaii renovation from New York is a nightmare — unless you have Koa. Weekly video reports, instant responses, and the project came in on time. First time that's ever happened to me here."</p><div class="tdiv"></div><div class="ta"><strong>James T.</strong>Diamond Head Property · New York, NY</div></div>
+      <div class="tc reveal d2"><div class="tstars"><span></span><span></span><span></span><span></span><span></span></div><p class="tq">"Our architect recommended Koa and it was the best advice we got on the entire project. They caught a waterproofing issue in the framing stage that would have been catastrophic to fix after cladding."</p><div class="tdiv"></div><div class="ta"><strong>Dr. S. Tanaka</strong>Portlock Renovation · Osaka, Japan</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="blog">
+  <div class="wrap">
+    <div class="sl reveal">Project Insights</div>
+    <h2 class="st reveal d1">Knowledge for the<br /><em style="font-style:italic;color:var(--gold)">Off-Island Owner</em></h2>
+    <div class="bg">
+      <article class="bc reveal"><div class="bimg" style="background:linear-gradient(135deg,#1e1a12,#0f0e0a)"><span style="position:relative;z-index:1">🔨</span><div class="bover"></div></div><div class="bbd"><div class="bcat">Owner Protection</div><h3 class="btitle">Why Every Off-Island Owner Needs an Owner's Rep in Hawaii</h3><p class="bexc">The 3,000 miles between you and your contractor is the most expensive gap in Hawaii real estate. Here's exactly what an owner's representative does — and why the math almost always works in your favor.</p><div class="bmeta">February 2026 · 7 min read</div></div></article>
+      <article class="bc reveal d1"><div class="bimg" style="background:linear-gradient(135deg,#14100a,#0a0805)"><span style="position:relative;z-index:1">💰</span><div class="bover"></div></div><div class="bbd"><div class="bcat">Budget Control</div><h3 class="btitle">How to Avoid Getting Overcharged by Hawaii Contractors</h3><p class="bexc">Hawaii's contractor market is tight and prices are high. But there's a difference between fair market rates and being taken advantage of.</p><div class="bmeta">February 2026 · 5 min read</div></div></article>
+      <article class="bc reveal d2"><div class="bimg" style="background:linear-gradient(135deg,#101418,#080c10)"><span style="position:relative;z-index:1">📋</span><div class="bover"></div></div><div class="bbd"><div class="bcat">Planning</div><h3 class="btitle">The Real Timeline for a Luxury Oahu Renovation</h3><p class="bexc">What the contractor tells you, what the permit office tells you, and what actually happens — a candid breakdown.</p><div class="bmeta">January 2026 · 6 min read</div></div></article>
+    </div>
+  </div>
+</section>
+
+<div class="cband"><div class="wrap"><div class="cbi">
+  <div class="cbt reveal"><h2>Your Project Deserves an Expert<br />Advocate. Not Just a Contractor.</h2><p>Let's review your project — budget, scope, timeline — and show you where the risks are before you break ground.</p></div>
+  <a href="#contact" class="btn-d reveal d1">Get Free Project Review →</a>
+</div></div></div>
+
+<section class="contact" id="contact">
+  <div class="wrap"><div class="cg">
+    <div class="ci">
+      <div class="sl reveal">Start Here</div>
+      <h3 class="reveal d1">Tell Us About<br />Your Project</h3>
+      <p class="reveal d2">Every engagement starts with a free project review. We assess your scope, your current situation, and where the risks are — no obligation, no pressure.</p>
+      <div class="cd reveal d2"><div class="cdi">📞</div><div><div class="cdl">Call or Text</div><div class="cdv">(808) 000-0000</div></div></div>
+      <div class="cd reveal d3"><div class="cdi">✉️</div><div><div class="cdl">Email</div><div class="cdv">hello@koaprojectgroup.com</div></div></div>
+      <div class="cd reveal d3"><div class="cdi">📍</div><div><div class="cdl">Location</div><div class="cdv">Serving All of Oahu, Hawaii</div></div></div>
+    </div>
+    <div class="cf reveal d1">
+      <form id="form">
+        <div class="ffields">
+          <div class="frow"><div class="fg"><label>First Name</label><input type="text" placeholder="James" required /></div><div class="fg"><label>Last Name</label><input type="text" placeholder="Thornton" required /></div></div>
+          <div class="fg"><label>Email</label><input type="email" placeholder="james@example.com" required /></div>
+          <div class="fg"><label>Phone</label><input type="tel" placeholder="+1 (808) 000-0000" /></div>
+          <div class="fg"><label>Property Address / Area</label><input type="text" placeholder="Kahala, Diamond Head, Kailua..." /></div>
+          <div class="fg"><label>Project Type</label>
+            <select><option disabled selected value="">Select project type</option><option>Full home renovation</option><option>Kitchen & bath remodel</option><option>Addition or expansion</option><option>New construction oversight</option><option>Maintenance retainer</option><option>One-time consultation</option></select>
+          </div>
+          <div class="fg"><label>Estimated Budget</label>
+            <select><option disabled selected value="">Select range</option><option>Under $100,000</option><option>$100,000 – $300,000</option><option>$300,000 – $600,000</option><option>$600,000 – $1,000,000</option><option>Over $1,000,000</option></select>
+          </div>
+          <div class="fg"><label>Tell Us More</label><textarea placeholder="Current situation, timeline, specific concerns..."></textarea></div>
+          <button type="submit" class="fsub">Send Project Inquiry</button>
+        </div>
+      </form>
+    </div>
+  </div></div>
+</section>
+
+<footer><div class="wrap">
+  <div class="fg2">
+    <div class="fb"><div class="logo">Koa <span style="color:var(--gold);font-style:italic">Project Group</span></div><p>Owner's representative and renovation project management for luxury properties on Oahu, Hawaii. We protect your investment — from first bid to final walkthrough.</p></div>
+    <div class="fc"><h5>Services</h5><ul><li><a href="#services">Project Management</a></li><li><a href="#services">Maintenance Retainer</a></li><li><a href="#services">Hourly Consulting</a></li><li><a href="#services">Property Health Check</a></li></ul></div>
+    <div class="fc"><h5>Service Areas</h5><ul><li><a href="#areas">Kahala</a></li><li><a href="#areas">Diamond Head</a></li><li><a href="#areas">Kailua / Lanikai</a></li><li><a href="#areas">Ko Olina</a></li></ul></div>
+    <div class="fc"><h5>Company</h5><ul><li><a href="#process">Our Process</a></li><li><a href="#blog">Project Insights</a></li><li><a href="#contact">Contact</a></li><li><a href="privacy.html">Privacy</a></li></ul></div>
+  </div>
+  <div class="fbot"><p>© 2026 Koa Project Group, LLC · Oahu, Hawaii</p><p><a href="privacy.html">Privacy</a> · <a href="mailto:hello@koaprojectgroup.com">hello@koaprojectgroup.com</a></p></div>
+</div></footer>
+
+<script>
+  const obs=new IntersectionObserver(e=>e.forEach(e=>e.isIntersecting&&e.target.classList.add('on')),{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+  document.querySelectorAll('.reveal').forEach(r=>obs.observe(r));
+  setTimeout(()=>document.querySelectorAll('.hero .reveal').forEach(r=>r.classList.add('on')),100);
+  window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('s',scrollY>60));
+  document.getElementById('burger').addEventListener('click',()=>{const l=document.querySelector('.nl');const o=l.style.display==='flex';l.style.cssText=o?'display:none':'display:flex;flex-direction:column;position:fixed;top:68px;left:0;right:0;background:rgba(15,14,12,.97);backdrop-filter:blur(20px);padding:28px 40px;gap:22px;border-bottom:1px solid var(--border)'});
+  document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();const b=this.querySelector('.fsub');b.textContent='✓ Received — We\'ll Review and Be in Touch Within 24 Hours';b.style.background='#1a200a';b.style.color='#6aaa2a';b.disabled=true});
+  document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
+</script>
+</body>
+</html>
