@@ -119,7 +119,7 @@
     /* PROCESS */
     .proc{background:var(--bg2)}
     .psteps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:72px;border:1px solid rgba(255,255,255,.05)}
-    .pstep{padding:44px 30px;border-right:1px solid rgba(255,255,255,.05);position:relative;transition:background .3s}
+    .pstep{padding:44px 30px;border-right:1px solid rgba(255,255,255,.05);position:relative;transition:background .3s}.pstep:not(:last-child)::after{content:"→";position:absolute;right:-11px;top:44px;font-size:1.1rem;color:rgba(201,169,110,.5);z-index:2;pointer-events:none}@media(max-width:1024px){.pstep:not(:last-child)::after{display:none}}
     .pstep:last-child{border-right:none}
     .pstep:hover{background:rgba(200,169,110,.03)}
     .pstep::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),transparent);opacity:0;transition:opacity .3s}
