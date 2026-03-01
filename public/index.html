@@ -228,6 +228,7 @@
 
     @media(max-width:1024px){.wrap{padding:0 24px}.pg,.wg,.cg{grid-template-columns:1fr;gap:56px}.sg,.tg,.bg{grid-template-columns:1fr}.psteps{grid-template-columns:1fr 1fr}.ag{grid-template-columns:1fr 1fr}.fg2{grid-template-columns:1fr 1fr;gap:36px}.nl{display:none}.burger{display:flex}.cbi{grid-template-columns:1fr;gap:28px}.hstats{flex-wrap:wrap}}
     @media(max-width:640px){.wrap{padding:0 18px}section{padding:80px 0}h1{font-size:2.8rem}.hbtns{flex-direction:column}.frow{grid-template-columns:1fr}.psteps,.ag{grid-template-columns:1fr}.fg2{grid-template-columns:1fr}.cf{padding:32px 24px}}
+  #scroll-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--gold),#e8d5a3);z-index:9999;transition:width .1s linear;}
   </style>
 
   <script type="application/ld+json">
@@ -245,6 +246,7 @@
   </script>
 </head>
 <body>
+  <div id="scroll-progress"></div>
   <div style="text-align:center;padding:16px 24px;background:#e8f2e8;border-bottom:2px solid #a8c5a0;">
     <span style="font-family:sans-serif;font-size:0.9rem;color:#2c3e2d;letter-spacing:0.05em;">
       ⚡ <strong>Currently accepting Q2 2026 projects</strong> — Limited owner's rep slots available. <a href="#contact" style="color:#2c3e2d;text-decoration:underline;">Inquire now →</a>
@@ -496,7 +498,7 @@
   const obs=new IntersectionObserver(e=>e.forEach(e=>e.isIntersecting&&e.target.classList.add('on')),{threshold:.1,rootMargin:'0px 0px -50px 0px'});
   document.querySelectorAll('.reveal').forEach(r=>obs.observe(r));
   setTimeout(()=>document.querySelectorAll('.hero .reveal').forEach(r=>r.classList.add('on')),100);
-  window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('s',scrollY>60));
+  window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('s',scrollY>60);const p=document.getElementById('scroll-progress');if(p)p.style.width=Math.min((scrollY/(document.documentElement.scrollHeight-innerHeight))*100,100)+'%';});
   document.getElementById('burger').addEventListener('click',()=>{const l=document.querySelector('.nl');const o=l.style.display==='flex';l.style.cssText=o?'display:none':'display:flex;flex-direction:column;position:fixed;top:68px;left:0;right:0;background:rgba(15,14,12,.97);backdrop-filter:blur(20px);padding:28px 40px;gap:22px;border-bottom:1px solid var(--border)'});
   document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();const b=this.querySelector('.fsub');b.textContent='✓ Received — We\'ll Review and Be in Touch Within 24 Hours';b.style.background='#1a200a';b.style.color='#6aaa2a';b.disabled=true});
   document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
