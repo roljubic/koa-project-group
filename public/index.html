@@ -405,6 +405,24 @@
   ]
 }
 </script>
+
+<!-- HOKU: WebSite Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Koa Project Group",
+  "url": "https://koa-project-group.onrender.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://koa-project-group.onrender.com/blog/?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 </head>
 <body>
   <div id="scroll-progress"></div>
