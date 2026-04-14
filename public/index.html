@@ -479,6 +479,41 @@
   </div>
 </div>
 
+<div id="koa-results" style="background:#1a1208;padding:48px 0;border-top:1px solid rgba(201,169,110,0.12);border-bottom:1px solid rgba(201,169,110,0.12);">
+  <div style="max-width:1100px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:32px;text-align:center;">
+    <div>
+      <div class="koa-num" data-target="18" style="font-family:Georgia,serif;font-size:3rem;color:#c9a96e;font-weight:400;">0</div>
+      <div style="font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:8px;">% Avg Cost Savings</div>
+    </div>
+    <div>
+      <div class="koa-num" data-target="100" style="font-family:Georgia,serif;font-size:3rem;color:#c9a96e;font-weight:400;">0</div>
+      <div style="font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:8px;">% Permit Managed</div>
+    </div>
+    <div>
+      <div class="koa-num" data-target="47" style="font-family:Georgia,serif;font-size:3rem;color:#c9a96e;font-weight:400;">0</div>
+      <div style="font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:8px;">Vendors Vetted</div>
+    </div>
+    <div>
+      <div class="koa-num" data-target="96" style="font-family:Georgia,serif;font-size:3rem;color:#c9a96e;font-weight:400;">0</div>
+      <div style="font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:8px;">% On-Budget Rate</div>
+    </div>
+    <div>
+      <div style="font-family:Georgia,serif;font-size:3rem;color:#c9a96e;font-weight:400;">$0</div>
+      <div style="font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:8px;">Hidden Markups</div>
+    </div>
+  </div>
+  <p style="text-align:center;font-size:0.7rem;color:rgba(255,255,255,0.2);margin:24px 0 0;letter-spacing:1px;">BASED ON O'AHU PROJECT PORTFOLIO</p>
+</div>
+<script>
+(function(){
+  var els=document.querySelectorAll('#koa-results .koa-num');
+  var fired=false;
+  function run(){if(fired)return;fired=true;els.forEach(function(el){var t=parseInt(el.getAttribute('data-target'),10),d=1400,s=Math.ceil(d/t),c=0,iv=setInterval(function(){c++;el.textContent=c;if(c>=t){el.textContent=t;clearInterval(iv);}},s);});}
+  var ob=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)run();});},{threshold:0.3});
+  els.forEach(function(el){ob.observe(el);});
+})();
+</script>
+
 <div class="mq"><div class="mq-t">
   <span>Budget Protection</span><span>Timeline Management</span><span>Contractor Vetting</span><span>Weekly Site Reports</span><span>Change Order Control</span><span>Quality Inspections</span><span>Bid Management</span><span>Owner Advocacy</span>
   <span>Budget Protection</span><span>Timeline Management</span><span>Contractor Vetting</span><span>Weekly Site Reports</span><span>Change Order Control</span><span>Quality Inspections</span><span>Bid Management</span><span>Owner Advocacy</span>
